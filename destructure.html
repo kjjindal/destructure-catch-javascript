@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructure in javascript : catch error</title>
+</head>
+<body>
+
+<h1>Destructure in javascript in easy way      </h1> 
+
+
+ 
+     <script>
+    
+     
+     //destructure in javascript 
+     // i will explain 6-7 example of destructure 
+
+
+
+    //  example 1:
+     
+    // [a,b,c]=[15,20,25];
+    // document.write(a,"<br />");
+    // document.write(b,"<br />");
+    // document.write(c,"<br />");
+
+
+    //example 2:
+    // [a,b,c]=[15,20,25,30,35];
+    // document.write(a,"<br />");
+    // document.write(b,"<br />");
+    // document.write(c,"<br />");
+    //gives same output 
+
+
+    // example 3:
+    // [a,b,...c]=[15,20,25,30,35,40];
+    // // here 3dots means take always after 20 in c variable  in the format of array
+    // document.write(a,"<br />");
+    // document.write(b,"<br />");
+    // console.log(c);
+
+
+    // example 4:
+    // ({a,b,c,...d}={a:20,b:25,c:35,d:45,e:50})
+    // document.write(a,"<br />");
+    // document.write(b,"<br />");
+    // document.write(c,"<br />");
+    // console.log(d);
+
+
+    //example 5:
+    // var friends=['rajesh','ramesh','rahul','raman','rekha'];
+    // [a,b,c,d,e]=friends;
+    // document.write(a+"<br />");
+    // document.write(b+"<br />");
+    // document.write(c+"<br />");
+    // document.write(d+"<br />");
+    // document.write(e+"<br />");
+
+     //example 6:
+    // var friends=['rajesh','ramesh','rahul','raman','rekha'];
+    // [a,b,c,...d]=friends;
+    // document.write(a+"<br />");
+    // document.write(b+"<br />");
+    // document.write(c+"<br />");
+    // console.log(d);
+
+    // example 7:
+    var student_details={
+        name:'raja rao',
+        roll:37,
+        age:25,
+        language:'python & javascript',
+        selection:function(){return 'eligible'}
+    }
+
+    var {name,roll,age,language,selection}=student_details;
+    document.write(`<h2> Student name is <u> ${name}</u>  and his roll name is <u> ${roll}</u>  and he is <u>${age} </u> years old and he have knowledge of <u> ${language}</u>  so this student is <u>${selection()} </u>  for placement drive </h2> `,"<br />");
+
+
+    document.write("<h1>Thanks for watching my videos please do subscribe my channel and like the video</h1>")
+
+
+
+
+
+
+
+
+
+       
+ 
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
